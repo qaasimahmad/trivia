@@ -4,12 +4,13 @@ const router = require('./routes/index.js');
 
 app.use('/', router);
 
+const port = 3500 || process.env.PORT;
+
 // base application
 app.get('/', (req, res) => {
     res.send('Welcome to trivia');
 });
 
-const port = 3500;
 app.listen(port, () => {
     console.log(`App is listening on port ${port}`);
 });
