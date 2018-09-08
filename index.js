@@ -6,7 +6,7 @@ app.use('/', router);
 
 // base application
 app.get('/', (req, res) => {
-    res.send('We are live my poeple');
+    res.send('Welcome to trivia');
 });
 
 const port = 3500;

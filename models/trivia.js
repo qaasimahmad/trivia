@@ -43,6 +43,10 @@ const triviaSchema = new Schema({
   }
 });
 
+triviaSchema.static('findByCategory', function(category, callback) {
+  console.log('i got here');
+  return this.find({ category }, callback);
+});
 
-const triviaModel = mongoose.model('trivial', triviaSchema);
+const triviaModel = mongoose.model('trivia', triviaSchema);
 module.exports = triviaModel;
