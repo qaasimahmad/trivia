@@ -4,7 +4,7 @@ const router = require('./routes/index.js');
 
 app.use('/', router);
 
-const port = 3500 || process.env.PORT;
+const port = process.env.PORT || 3500;
 
 // base application
 app.get('/', (req, res) => {
